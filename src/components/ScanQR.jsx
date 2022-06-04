@@ -15,6 +15,7 @@ function ScanQR() {
               console.info(error);
             }
           }}
+          // change facing mode to environment
           facingMode={'environment'}
         />
         <p>{data}</p>
