@@ -15,7 +15,7 @@ function ScanQR() {
               console.info(error);
             }
           }}
-          facingMode={'rear'}
+          facingMode={'environment'}
         />
         <p>{data}</p>
     </div>
