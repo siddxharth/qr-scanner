@@ -33,8 +33,8 @@ function GenerateQR() {
 	const clear_status = `${text === '' ? "disabled" : ""}`
 	return (
 		<>
-			<Link to="/generate"><Button style={{minWidth: "50vw"}}>Generate QR</Button></Link>
-			<Link to="/scan"><Button style={{minWidth: "50vw"}}>Scan QR</Button></Link>
+			<Link to="/generate"><Button style={{marginTop: "20px", minWidth: "50vw"}}>Generate QR</Button></Link>
+			<Link to="/scan"><Button style={{marginTop: "20px", minWidth: "50vw"}}>Scan QR</Button></Link>
 			<div className="d-flex justify-content-center align-items-center"  style={{minHeight: '100vh'}}>
 				<div className='d-flex justify-content-center row align-items-center'>
 					<QRCode text={text}/>

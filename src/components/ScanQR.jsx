@@ -9,8 +9,8 @@ function ScanQR() {
   var constraints = { facingMode: 'environment', aspectRatio: 1, width: { ideal: 400 }, frameRate: { ideal: 60, max: 60 }, autoGain: true };
   return (
     <>
-    <Link to="/generate"><Button style={{minWidth: "50vw"}}>Generate QR</Button></Link>
-    <Link to="/scan"><Button style={{minWidth: "50vw"}}>Scan QR</Button></Link>
+    <Link to="/generate"><Button style={{marginTop: "20px", minWidth: "50vw"}}>Generate QR</Button></Link>
+    <Link to="/scan"><Button style={{marginTop: "20px", minWidth: "50vw"}}>Scan QR</Button></Link>
     <div className='qr-scanner'>
         <QrReader
           className='qr-scanner__video'
