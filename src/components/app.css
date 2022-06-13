@@ -1,5 +1,14 @@
-video{
-    max-width: 50vw;
+.qr-scanner__video{
     max-height: 50vh;
-    margin: auto;
+    max-width: 50vw;
+
+}
+
+.data{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
 }

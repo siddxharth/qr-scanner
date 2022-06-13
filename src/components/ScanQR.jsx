@@ -15,11 +15,12 @@ function ScanQR() {
         <QrReader
           className='qr-scanner__video'
           constraints = {constraints}
-          videoContainerStyle={{
-            borderRadius: '15px',
-          }}
+          videoContainerStyle={{marginTop: "100px", marginBottom: '20px', marginLeft: 'calc(calc(100vw - 50vh) / 2)', minHeight: "30vh", maxHeight: "50vh"}}
           videoStyle={{
-            borderRadius: '15px',
+            minWidth: "20vh", minHeight: "20vh",
+            maxWidth: "50vh", maxHeight: "50vh",
+            borderRadius: '2em',
+            backgroundColor: '#dedede',
           }}
           onResult={(result, error) => {
               if (!!result) {
@@ -32,7 +33,7 @@ function ScanQR() {
             }
           }
         />
-        <p>{data}</p>
+        <p className='data'>{data}</p>
     </div>
     </>
   );

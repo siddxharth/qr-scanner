@@ -11,6 +11,7 @@ const QRCode = (props) => {
                 level={"L"}
                 includeMargin={false}
                 renderas={"canvas"}
+                border={10}
                 style={{
                     maxHeight: '40vh',
                     maxWidth: '40vh',
