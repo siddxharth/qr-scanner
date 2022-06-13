@@ -20,7 +20,7 @@ function GenerateQR() {
 		}
 		return password;
 	}
-	const [text, setText] = useState(randomString());
+	const [text, setText] = useState('');
 	const download = () => {
         const canvas = document.getElementById('canvas');
         var url = canvas.toDataURL("image/png");
