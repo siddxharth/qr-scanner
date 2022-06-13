@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
 import { QrReader } from 'react-qr-reader';
+import './app.css';
 function ScanQR() {
   const [data, setData] = useState('No result');
-
+  var constraints = { facingMode: 'environment' };
   return (
-    <div className='d-flex row justify-content-center align-items-center' style={{ minWidth: "40vw", minHeight: "40vh", maxHeight: "60vh", maxWidth: '60vw'}}>
+    <div className=''>
         <QrReader
+          className=''
+          constraints = {constraints}
           onResult={(result, error) => {
             if (!!result) {
               setData(result?.text);
@@ -16,7 +19,6 @@ function ScanQR() {
             }
           }}
           // change facing mode to main camera
-          facingMode="rear"
         />
         <p>{data}</p>
     </div>
