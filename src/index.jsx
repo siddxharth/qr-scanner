@@ -9,10 +9,10 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 	<BrowserRouter>
 		<Routes>
-			<Route path='/' element={<App />}>
-				<Route path='generate' element={<GenerateQR />} />
-				<Route path='scan' element={<ScanQR />} />
-			</Route>
+			{/* <Route path='/' element={<App />}> */}
+			<Route path='/generate' element={<GenerateQR />} />
+			<Route path='/scan' element={<ScanQR />} />
+			{/* </Route> */}
 		</Routes>
 	</BrowserRouter>
 );

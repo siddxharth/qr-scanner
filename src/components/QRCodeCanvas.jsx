@@ -15,7 +15,6 @@ const QRCode = (props) => {
                     maxHeight: '40vh',
                     maxWidth: '40vh',
                 }}
-                className=""
                 />
         </div>
     );
