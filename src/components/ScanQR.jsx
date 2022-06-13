@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import { QrReader } from 'react-qr-reader';
 import './app.css';
+
 function ScanQR() {
   const [data, setData] = useState('No result');
   var constraints = { facingMode: 'environment' };
   return (
-    <div className=''>
+    <div className='qr-scanner'>
         <QrReader
-          className=''
+          className='qr-scanner__video'
           constraints = {constraints}
           onResult={(result, error) => {
             if (!!result) {
