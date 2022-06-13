@@ -15,9 +15,9 @@ function ScanQR() {
         <QrReader
           className='qr-scanner__video'
           constraints = {constraints}
-          videoContainerStyle={{marginTop: "100px", marginBottom: '20px', marginLeft: 'calc(calc(100vw - 50vh) / 2)', minHeight: "30vh", maxHeight: "50vh"}}
+          videoContainerStyle={{marginTop: "100px", marginBottom: '20px', marginLeft: 'calc(calc(100vw - 70vw) / 2)', minHeight: "30vh", maxHeight: "50vh"}}
           videoStyle={{
-            minWidth: "20vh", minHeight: "20vh",
+            minWidth: "30vh", minHeight: "30vh",
             maxWidth: "50vh", maxHeight: "50vh",
             borderRadius: '2em',
             backgroundColor: '#dedede',
